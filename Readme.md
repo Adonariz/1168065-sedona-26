@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей Жила](https://up.htmlacademy.ru/htmlcss/26/user/1168065).
-* Наставник: `Неизвестно`.
+* Наставник: [Святослав Родионов] (https://htmlacademy.ru/profile/rodionsv).
 
 ---
 
