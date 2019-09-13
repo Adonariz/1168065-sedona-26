@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css\style.css">
   </head>
   <body>
     <header>
-      <a><img class="logo" src="img\logo-sedona.svg" alt="Логотип" width="140px" height="71px"></a>
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+      <a><img class="logo" src="img\logo-sedona.svg" alt="Логотип" width="140" height="71"></a>
       <nav class="main-nav">
         <ul>
           <li><a href="#">Информация</a></li>
@@ -19,14 +21,13 @@
     
     <main>
       <!-- Вступительный блок -->
-      <section class="intro">
-        <h1>Добро пожаловать в Седону</h1>
-        <!-- Текст будет частью фона -->
-      </section>
+      <div class="intro">
+        <img src="img\intro-welcome.svg" alt="Седона лучше, чем Гранд Каньон" width="459" height="353">
+      </div>
 
       <!-- Блок с фичами -->
       <section class="features">
-        <h2>Причины посетить Седону</h2>
+        <h2 class="visually-hidden">Причины посетить Седону</h2>
         <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="features-list">
@@ -86,18 +87,19 @@
       </section>
 
       <!-- Блок поиска гостиницы -->
-      <section class="interest">
-        <h2>Заинтересовались?</h2>
+      <section class="hotel-search">
+        <h2 class="visually-hidden">Выбор гостиницы</h2>
+        <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, 
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button>Поиск гостиницы в Седоне</button>
-        <!-- Здесь будет форма поиска гостиницы -->
+        <!-- Попап формы поиска внизу -->
       </section>
 
       <!-- Блок с картой -->
-      <section class="map">
-        <!-- Здесь будет карта (может даже интерактивная) -->
-      </section>
+      <div class="map">
+        <img src="img\map.jpg" alt="Седона на карте" width="1200" height="593">
+      </div>
 
     </main>
     
@@ -125,10 +127,38 @@
 			<div class="copyright">
 				<p>Website by</p>
         <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="Интенсив HTML и CSS, уровень 1">
-          <img src="img\logo-htmlacademy.svg" alt="HTML Academy" width="115px" height="41px">
+          <img src="img\logo-htmlacademy.svg" alt="HTML Academy" width="115" height="41">
         </a>
 			</div>
 		</footer>
+
+    <div class="hotel-search-popup">
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <label for="arrival-date">Дата заезда:</label>
+        <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
+        <button type="button" aria-label="Кнопка для вызова календаря">
+          <img src="img\calendar.svg" alt="Календарь" width="21" height="22">
+        </button>
+        <label for="departure-date">Дата выезда:</label>
+        <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
+        <button type="button" aria-label="Кнопка для вызова календаря">
+          <img src="img\calendar.svg" alt="Календарь" width="21" height="22">
+        </button>
+        <p>
+          Взрослые:
+          <button type="button">-</button>
+          <input type="text" name="adult-count" value="2">
+          <button type="button">+</button>
+        </p>
+        <p>
+          Дети:
+          <button type="button">-</button>
+          <input type="text" name="child-count" value="0">
+          <button type="button">+</button>
+        </p>
+        <button type="submit">Найти</button>
+      </form>
+    </div>
 
   </body>
 </html>
