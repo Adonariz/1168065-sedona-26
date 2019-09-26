@@ -379,6 +379,7 @@ header .main-nav {
 
 .hotel-search {
 	background: transparent;
+	position: relative;
 }
 
 .hotel-search .search-intro {
@@ -445,6 +446,8 @@ header .main-nav {
 	font-weight: bold;
 	margin-left: auto;
 	margin-right: auto;
+	position: absolute;
+	left: 316px;
 }
 
 .hotel-form input {
@@ -472,14 +475,23 @@ header .main-nav {
 
 .hotel-form .input-container {
 	width: 346px;
-  height: 38px;
+	height: 38px;
 	background-color: #f2f2f2;
 	display: flex;
 }
 
+.hotel-form .input-container:hover {
+	background-color: #ebebeb;
+}
+
+.hotel-form .input-container:focus {
+	border: 2px solid #e5e5e5;
+  	background-color: #ffffff;
+}
+
 .input-container input {
-	width: 280px;
-	margin-left: 13px;
+	width: 295px;
+	padding-left: 13px;
 }
 
 .input-container .calendar {
@@ -528,21 +540,6 @@ header .main-nav {
 	margin-bottom: 3px;
 }
 
-.input-container .calendar:hover,
-.input-container .calendar:focus,
-.input-container .less:hover,
-.input-container .less:focus,
-.input-container .more:hover,
-.input-container .more:focus {
-	fill: black;
-}
-
-.input-container .calendar:active,
-.input-container .less:active,
-.input-container .more:active {
-	fill: #81b3d2;
-}
-
 .line-container.persons .input-container {
 	width: 114px;
 }
@@ -585,10 +582,10 @@ header .main-nav {
 
 .input-container .calendar:hover,
 .input-container .calendar:focus,
-.input-container .less:hover,
-.input-container .less:focus,
-.input-container .more:hover,
-.input-container .more:focus {
+.input-container .less:hover path,
+.input-container .less:focus path,
+.input-container .more:hover path,
+.input-container .more:focus path {
 	fill: black;
 }
 
@@ -671,6 +668,19 @@ footer.index {
 	margin-left: 3px;	
 }
 
+.social-btn li a:hover,
+.social-btn li a:focus {
+	background-color: #669ec0;
+}
+
+.social-btn li a:active {
+	background-color: #5496bd;
+}
+
+.social-btn li a:active svg {
+	opacity: 0.3;
+}
+
 .copyright {
 	width: 400px;
 	display: flex;
@@ -687,10 +697,11 @@ footer.index {
 	margin-left: 8px;
 }
 
-.copyright-logo:hover {
+.copyright-logo:hover path,
+.copyright-logo:focus path {
 	fill: #81b3d2;
 }
 
-.copyright-logo:active {
+.copyright-logo:active path {
 	fill: #bdbbbc;
 }
