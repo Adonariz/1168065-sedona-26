@@ -378,7 +378,11 @@ header .main-nav {
 /* Секция с поиском */
 
 .hotel-search {
-	width: inherit;
+	background: transparent;
+}
+
+.hotel-search .search-intro {
+	width: 1200px;
 	min-height: 298px;
 	display: flex;
 	flex-direction: column;
@@ -401,6 +405,12 @@ header .main-nav {
 	white-space: pre-line;
 }
 
+.hotel-search button {
+	border: none;
+	padding: 0;
+	background: none;
+}
+
 .hotel-search .htl-search-btn {
 	width: 568px;
 	min-height: 86px;
@@ -410,7 +420,6 @@ header .main-nav {
 	color: #ffffff;
 	text-align: center;
 	line-height: 86px;
-	position: relative;
 }
 
 .btn-brown:hover,
@@ -423,14 +432,21 @@ header .main-nav {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+/* Форма */
+
 .hotel-form {
 	display: flex;
 	flex-direction: column;
 	width: 568px;
 	height: 395px;
-	background-color: inherit;
+<<<<<<< HEAD
+=======
+	background-color: white;
+>>>>>>> 1c2e85dbb52bf5f912bfd40c833dd4fd3635c010
 	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15); 
 	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .hotel-form input {
@@ -441,20 +457,100 @@ header .main-nav {
 	padding: 0;
 }
 
-.hotel-form button {
-	border: none;
-	padding: 0;
-	background: none;
+.hotel-form .line-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	justify-content: center;
+}
+
+.hotel-form .line-container:first-child {
+	margin-top: 55px;
+}
+
+.line-container label {
+	margin-right: 21px;
 }
 
 .hotel-form .input-container {
 	width: 346px;
   height: 38px;
-  background-color: #f2f2f2;
+	background-color: #f2f2f2;
+	display: flex;
 }
 
-.hotel-form .persons {
+.input-container input {
+	width: 280px;
+	margin-left: 13px;
+}
+
+.input-container .calendar {
+	fill: #a9a9a9;
+	margin-left: auto;
+	margin-top: auto;
+	margin-right: 9px;
+	margin-bottom: auto;
+	width: 21px;
+	height: 22px;
+}
+
+.line-container.persons {
 	display: flex;
+}
+
+.line-container.persons .input-container {
+	width: 114px;
+}
+
+.line-container.persons .counter-container {
+	display: flex;
+	align-items: center;
+}
+
+.line-container.persons .counter-container:first-child label {
+	margin-right: 41px;
+}
+
+.line-container.persons .counter-container:last-child label {
+	margin-right: 21px;
+}
+
+.line-container.persons .counter-container:first-child {
+	margin-right: 60px;
+	margin-left: auto;
+}
+
+.line-container.persons .counter-container:last-child {
+	margin-right: auto;
+}
+
+.counter-container .input-container .less,
+.counter-container .input-container input,
+.counter-container .input-container .more {
+	width: 38px;
+	height: 38px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.counter-container .input-container .less svg {
+	margin-bottom: 3px;
+}
+
+.input-container .calendar:hover,
+.input-container .calendar:focus,
+.input-container .less:hover,
+.input-container .less:focus,
+.input-container .more:hover,
+.input-container .more:focus {
+	fill: black;
+}
+
+.input-container .calendar:active,
+.input-container .less:active,
+.input-container .more:active {
+	fill: #81b3d2;
 }
 
 .hotel-form .form-search-btn {
@@ -466,7 +562,10 @@ header .main-nav {
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
-	line-height: 58px; 
+	line-height: 58px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .btn-blue:hover,
@@ -486,12 +585,15 @@ header .main-nav {
 /* Подвал */
 
 footer {
-	width: inherit;
+	width: 1200px;
 	display: flex;
 	align-items: center;
-	background-color: white;
-	opacity: 0.9;
 	margin: 0;
+	position: relative;
+}
+
+footer.index {
+	background-color:rgba(255, 255, 255, 0.9);
 }
 
 .footer-hashtag {
@@ -540,3 +642,10 @@ footer {
 	margin-left: 8px;
 }
 
+.copyright-logo:hover {
+	fill: #81b3d2;
+}
+
+.copyright-logo:active {
+	fill: #bdbbbc;
+}
