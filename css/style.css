@@ -484,7 +484,11 @@ header .main-nav {
 .input-container .calendar {
 	fill: #a9a9a9;
 	margin-left: auto;
+	margin-top: auto;
 	margin-right: 9px;
+	margin-bottom: auto;
+	width: 21px;
+	height: 22px;
 }
 
 .line-container.persons {
@@ -529,6 +533,21 @@ header .main-nav {
 
 .counter-container .input-container .less svg {
 	margin-bottom: 3px;
+}
+
+.input-container .calendar:hover,
+.input-container .calendar:focus,
+.input-container .less:hover,
+.input-container .less:focus,
+.input-container .more:hover,
+.input-container .more:focus {
+	fill: black;
+}
+
+.input-container .calendar:active,
+.input-container .less:active,
+.input-container .more:active {
+	fill: #81b3d2;
 }
 
 .hotel-form .form-search-btn {
@@ -617,3 +636,10 @@ footer {
 	margin-left: 8px;
 }
 
+.copyright-logo:hover {
+	fill: #81b3d2;
+}
+
+.copyright-logo:active {
+	fill: #bdbbbc;
+}
