@@ -439,10 +439,8 @@ header .main-nav {
 	flex-direction: column;
 	width: 568px;
 	height: 395px;
-<<<<<<< HEAD
-=======
 	background-color: white;
->>>>>>> 1c2e85dbb52bf5f912bfd40c833dd4fd3635c010
+	background-color: white;
 	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15); 
 	font-weight: bold;
 	margin-left: auto;
@@ -496,6 +494,53 @@ header .main-nav {
 
 .line-container.persons {
 	display: flex;
+	align-items: center;
+}
+
+.line-container.persons .counter-container:first-child label {
+	margin-right: 41px;
+}
+
+.line-container.persons .counter-container:last-child label {
+	margin-right: 21px;
+}
+
+.line-container.persons .counter-container:first-child {
+	margin-right: 60px;
+	margin-left: auto;
+}
+
+.line-container.persons .counter-container:last-child {
+	margin-right: auto;
+}
+
+.counter-container .input-container .less,
+.counter-container .input-container input,
+.counter-container .input-container .more {
+	width: 38px;
+	height: 38px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.counter-container .input-container .less svg {
+	margin-bottom: 3px;
+}
+
+.input-container .calendar:hover,
+.input-container .calendar:focus,
+.input-container .less:hover,
+.input-container .less:focus,
+.input-container .more:hover,
+.input-container .more:focus {
+	fill: black;
+}
+
+.input-container .calendar:active,
+.input-container .less:active,
+.input-container .more:active {
+	fill: #81b3d2;
 }
 
 .line-container.persons .input-container {
