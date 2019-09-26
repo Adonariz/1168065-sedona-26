@@ -421,6 +421,7 @@ header .main-nav {
 	color: #ffffff;
 	text-align: center;
 	line-height: 86px;
+	text-transform: uppercase;
 }
 
 .btn-brown:hover,
@@ -484,14 +485,14 @@ header .main-nav {
 	background-color: #ebebeb;
 }
 
-.hotel-form .input-container:focus {
-	border: 2px solid #e5e5e5;
-  	background-color: #ffffff;
+.input-container input {
+	width: 290px;
+	padding-left: 13px;
 }
 
-.input-container input {
-	width: 295px;
-	padding-left: 13px;
+.input-container input:focus {
+	border: 2px solid #e5e5e5;
+  	background-color: #ffffff;
 }
 
 .input-container .calendar {
@@ -547,37 +548,6 @@ header .main-nav {
 .line-container.persons .counter-container {
 	display: flex;
 	align-items: center;
-}
-
-.line-container.persons .counter-container:first-child label {
-	margin-right: 41px;
-}
-
-.line-container.persons .counter-container:last-child label {
-	margin-right: 21px;
-}
-
-.line-container.persons .counter-container:first-child {
-	margin-right: 60px;
-	margin-left: auto;
-}
-
-.line-container.persons .counter-container:last-child {
-	margin-right: auto;
-}
-
-.counter-container .input-container .less,
-.counter-container .input-container input,
-.counter-container .input-container .more {
-	width: 38px;
-	height: 38px;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
-
-.counter-container .input-container .less svg {
-	margin-bottom: 3px;
 }
 
 .input-container .calendar:hover,
