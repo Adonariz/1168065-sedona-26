@@ -457,8 +457,8 @@ header .main-nav {
 }
 
 .input-container input:focus {
-	border: 2px solid #e5e5e5;
-  	background-color: #ffffff;
+	outline: 2px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
 .input-container .calendar {
@@ -508,44 +508,56 @@ header .main-nav {
 	justify-content: center;
 }
 
-.input-container .less,
+.input-container .less {
+	font-size: 0px;
+	background-image: url("../img/less-idle.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.input-container .less:hover,
+.input-container .less:focus {
+	background-image: url("../img/less-hover.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.input-container .less:active {
+	background-image: url("../img/less-active.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
 .input-container .more {
-	color: #cacaca;
-	display: flex;
-	justify-content: center;
+	font-size: 0px;
+	background-image: url("../img/more-idle.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
 }
 
-.input-container .less .less-icon {
-	font-size: 20px;
-	font-weight: bold;
-	outline: 1px solid red;
+.input-container .more:hover,
+.input-container .more:focus {
+	background-image: url("../img/more-hover.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
 }
 
-.input-container .more .more-icon {
-	font-size: 22px;
-	font-weight: bold;
-	outline: 1px solid red;
+.input-container .more:active {
+	background-image: url("../img/more-active.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
 }
+
+
+
 
 .input-container .calendar:hover,
 .input-container .calendar:focus {
 	fill: black;
 }
 
-.input-container .less:hover,
-.input-container .less:focus,
-.input-container .more:hover,
-.input-container .more:focus {
-	color: black;
-}
-
 .input-container .calendar:active {
 	fill: #81b3d2;
-}
-
-.input-container .less:active,
-.input-container .more:active {
-	color: #81b3d2;
 }
 
 .hotel-form .form-search-btn {
