@@ -676,7 +676,7 @@ footer.index {
 /* Секция с фильтром */
 .hotel-filter {
 	width: 1200px;
-	min-height: 217px;
+	min-height: 197px;
 	background-color: gray;
 	color: white;
 	background-image: url("../img/filter-background.jpg");
@@ -694,24 +694,74 @@ footer.index {
 	font-weight: bold;
 }
 
-.checkbox {
-	outline: 1px solid red;
-}
-
-.checkbox ul li {
+/* Чекбоксы */
+.checkbox-list .checkbox-list-item {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-
 .checkbox.infrastructure {
 	width: 200px;
+	margin-left: 72px;
+	position: relative;
+}
+
+.checkbox.infrastructure legend {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .checkbox.housing {
 	width: 200px;
 }
+
+.checkbox.housing legend {
+	margin-left: 0px;
+	position: relative;
+}
+
+.checkbox.housing legend {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.checkbox-list-item .checkbox-input {
+	position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.checkbox-list-item label {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.checkbox-list-item label::before {
+	content: "";
+	position: absolute;
+	margin-left: -40px;
+	width: 23px;
+	height: 23px;
+	background-image: url("../img/checkbox-off.svg");
+}
+
+.checkbox-input:checked + label::before {
+	width: 27px;
+	background-image: url("../img/checkbox-on.svg");
+}
+
+.checkbox-input:disabled + label::before {
+	background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.checkbox-input:checked:disabled + label::before {
+	width: 27px;
+	background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+/* Слайдер */
 
 .price-filter {
 	outline: 1px solid red;
