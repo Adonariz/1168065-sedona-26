@@ -233,7 +233,7 @@ header .main-nav {
 	min-height: 256px;
 	background-image: url("../img/feature-picture-1.jpg");
 	background-repeat: no-repeat;
-	flex-shrink: 0;
+	background-position: 0 -78px;
 }
 
 /* Второй блок */
@@ -241,7 +241,6 @@ header .main-nav {
 .not-numbered li {
 	display: flex;
 	flex-direction: column;
-	flex-shrink: 0;
 	justify-content: flex-end;
 	text-align: center;
 }
@@ -319,8 +318,8 @@ header .main-nav {
 	min-height: 256px;
 	background-image: url("../img/feature-picture-2.jpg");
 	background-repeat: no-repeat;
+	background-position: 0 -75px;
 	order: -1;
-	flex-shrink: 0;
 }
 
 /* Четвертый блок */
@@ -702,7 +701,7 @@ footer.index {
 }
 
 .checkbox.infrastructure {
-	width: 200px;
+	width: 150px;
 	margin-left: 72px;
 	position: relative;
 }
@@ -713,7 +712,8 @@ footer.index {
 }
 
 .checkbox.housing {
-	width: 200px;
+	width: 150px;
+	margin-left: 95px;
 }
 
 .checkbox.housing legend {
@@ -775,18 +775,19 @@ footer.index {
 	min-height: 86px;
 	border-bottom: 1px solid #f2f2f2;
 	display: flex;
-	align-items: center;
 }
 
 .search-results b {
 	font-size: 21px;
-	margin-left: 72px;
+	margin-top: 30px;
 	margin-right: 49px;
+	margin-left: 72px;
 }
 
 .search-results .results-sort {
 	font-size: 12px;
 	display: flex;
+	margin-top: 33px;
 }
 
 .results-sort .sort-by {

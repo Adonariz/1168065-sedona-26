@@ -67,24 +67,30 @@
 							
 							<!-- Слайдер с окнами -->
 							<div class="price-filter">
-								<b>Стоимость в сутки (Р):</b>
-								<table>
-									<tr>
-										<td>От 0</td>
-										<td>До 3000</td>
-									</tr>
-								</table>
+								<b>Стоимость в сутки (р):</b>
+								<div class="price-input">
+									<label class="min-price">
+										от 
+										<input type="text" name="min-price" value="0">
+									</label>
+									<label class="max-price">
+										до 
+										<input type="text" name="max-price" value="3000">
+									</label>
+								</div>
 								<div class="slider">
-									<span class="slider-btn" tabindex="0" aria-label="Ползунок от">
+									<span class="slider-btn range-min" tabindex="0" aria-label="Ползунок от">
 										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
 									</span>
-									<div class="slider-range"></div>
-									<span class="slider-btn" tabindex="0" aria-label="Ползунок до">
+									<div class="slider-range">
+										<div class="slider-bar"></div>
+									</div>
+									<span class="slider-btn range-max" tabindex="0" aria-label="Ползунок до">
 										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
 									</span>
 								</div>
-								<button type="submit">Показать</button>
-							</divc>
+								<button class="btn-transparent" type="submit">Показать</button>
+							</div>
 						</form>
 					</section>
 		
