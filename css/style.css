@@ -501,7 +501,7 @@ a {
 }
 
 .input-container .less,
-.input-container input,
+.input-container .input-small,
 .input-container .more {
 	width: 38px;
 	height: 38px;
