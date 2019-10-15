@@ -150,12 +150,13 @@ a {
 	line-height: 26px;
 	width: 600px;
 	margin-top: 60px;
+	margin-bottom: 13px;
 	text-align: center;
 }
 
 .features-intro p:nth-child(2) {
 	font-size: 14px;
-	line-height: 10px;
+	line-height: 26px;
 	text-align: center;
 }
 
