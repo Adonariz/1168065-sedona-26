@@ -221,6 +221,7 @@ a {
 .not-numbered-list li {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	width: 400px;
 	min-height: 330px;
 	text-align: center;
@@ -228,7 +229,6 @@ a {
 
 .not-numbered-list h3 {
 	font-size: 21px;
-	position: relative;
 	margin-top: 160px;
 	margin-bottom: 11px;
 }
@@ -240,7 +240,7 @@ a {
 	background-repeat: no-repeat;
 	width: 75px;
 	height: 72px;
-	bottom: 49px;
+	top: 60px;
 	left: 162px;
 }
 
@@ -251,7 +251,7 @@ a {
 	background-repeat: no-repeat;
 	width: 74px;
 	height: 70px;
-	bottom: 50px;
+	top: 60px;
 	left: 163px;
 }
 
@@ -262,7 +262,7 @@ a {
 	background-repeat: no-repeat;
 	width: 64px;
 	height: 76px;
-	bottom: 49px;
+	top: 50px;
 	left: 168px;
 }
 
@@ -753,6 +753,10 @@ a {
 	box-shadow: 0px 0px 3px 2px rgba(0,0,0, 0.50);
 }
 
+.checkbox-input:checked:focus + label:before {
+	box-shadow: none;
+}
+
 /* Слайдер */
 
 .price-filter {
@@ -964,7 +968,6 @@ a {
 }
 
 .hotel-list .hotel-list-item {
-	width: 1200px;
 	min-height: 150px;
 	display: flex;
 	border-bottom: 1px solid #f2f2f2;
@@ -977,8 +980,6 @@ a {
 }
 
 .hotel-list-item .hotel-main {
-	min-width: 300px;
-	min-height: 90px;
 	display: flex;
 	flex-direction: column;
 	padding-top: 25px;
@@ -1059,18 +1060,17 @@ a {
 }
 
 .hotel-list-item .hotel-rating {
-	margin-right: 73px;
 	width: 110px;
-	min-height: 90px;
+	margin-right: 73px;
 	margin-left: auto;
 	padding-top: 29px;
 }
 
 .hotel-rating .hotel-stars {
 	display: flex;
+	width: 110px;
 	font-size: 0;
 	flex-direction: row-reverse;
-	text-align: right;
 }
 
 .hotel-stars img {
