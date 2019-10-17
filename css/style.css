@@ -7,7 +7,7 @@ body {
 	background-color: #f2f2f2;
 	
 	margin: 0 auto;
-  padding: 0;
+	padding: 0;
 	
 	box-sizing: border-box; 
 }
@@ -177,12 +177,12 @@ a {
 
 .numbered.first {
 	display: flex;
+	min-height: 256px;
 }
 
 .city {
 	display: flex;
 	width: 400px;
-	min-height: 256px;
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
@@ -202,10 +202,6 @@ a {
 	text-align: center;
 	width: 290px;
 	margin-top: 22px;
-}
-
-.first .feature-picture-1 {
-	object-fit: cover;
 }
 
 /* Второй блок */
@@ -251,7 +247,7 @@ a {
 	background-repeat: no-repeat;
 	width: 74px;
 	height: 70px;
-	top: 60px;
+	top: 61px;
 	left: 163px;
 }
 
@@ -262,7 +258,7 @@ a {
 	background-repeat: no-repeat;
 	width: 64px;
 	height: 76px;
-	top: 50px;
+	top: 56px;
 	left: 168px;
 }
 
@@ -304,8 +300,6 @@ a {
 }
 
 .numbered.second .feature-picture-2 {
-	display: flex;
-	object-fit: cover;
 	order: -1;
 } 
 
@@ -420,6 +414,8 @@ a {
 	display: flex;
 	align-items: center;
 	padding-left: 55px;
+	margin: 0;
+	margin-bottom: 29px;
 	position: relative;
 }
 
@@ -438,7 +434,7 @@ a {
 
 .hotel-form .form-input.big {
 	width: 333px;
-	height: 38px;
+	height: 36px;
 }
 
 .form-line-container .calendar {
@@ -447,8 +443,8 @@ a {
 	height: 22px;
 	cursor: pointer;
 	position: absolute;
-	right: 63px;
-	bottom: 9px;
+	right: 64px;
+	bottom: 8px;
 }
 
 .person-counter-container {
@@ -505,7 +501,7 @@ a {
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 26px;
 	margin-right: auto;
 	margin-left: auto;
 	cursor: pointer;
@@ -576,8 +572,6 @@ a {
 
 .page-footer {
 	display: flex;
-	min-height: 120px;
-	margin: 0;
 	position: relative;
 	line-height: 26px;
 }
@@ -587,10 +581,13 @@ a {
 }
 
 .footer-hashtag {
+	display: flex;
 	width: 400px;
+	min-height: 120px;
 	font-size: 21px;
-	padding: calc((120px - 16px) / 2) 0; 
-	text-align: center;
+	align-items: center;
+	justify-content: center;
+
 }
 
 .social-btn {
@@ -1063,7 +1060,6 @@ a {
 	width: 110px;
 	margin-right: 73px;
 	margin-left: auto;
-	padding-top: 29px;
 }
 
 .hotel-rating .hotel-stars {
@@ -1071,6 +1067,8 @@ a {
 	width: 110px;
 	font-size: 0;
 	flex-direction: row-reverse;
+	margin-top: 29px;
+	margin-bottom: 40px;
 }
 
 .hotel-stars img {
@@ -1087,7 +1085,6 @@ a {
 	min-height: 27px;
 	justify-content: center;
 	align-items: center;
-	margin-top: 40px;
 	background-color: #f2f2f2;
 	color: #666666;	
 }
