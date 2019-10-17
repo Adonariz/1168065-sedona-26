@@ -53,12 +53,14 @@ a {
 
 .main-menu-list {
 	display: flex;
+	min-height: inherit;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	font-size: 14px;
-	line-height: 56px;
+	line-height: 26px;
 	font-weight: bold;
+	align-items: center;
 }
 
 .main-nav .header-logo {
@@ -122,11 +124,11 @@ a {
 	background-position: 
 	0 451px,
 	0 -83px;
+	text-align: center;
 }
 
 .intro img {
 	margin-top: 76px;
-	margin-left: 370px;
 }
 
 /* Фичи - текст */
@@ -202,13 +204,9 @@ a {
 	margin-top: 22px;
 }
 
-.first .background {
+.first .feature-picture-1 {
 	display: flex;
-	width: 800px;
-	min-height: 256px;
-	background-image: url("../img/feature-picture-1.jpg");
-	background-repeat: no-repeat;
-	background-position: 0 -78px;
+	object-fit: cover;
 }
 
 /* Второй блок */
@@ -306,13 +304,9 @@ a {
 	margin-top: 21px;
 }
 
-.numbered.second .background {
+.numbered.second .feature-picture-2 {
 	display: flex;
-	width: 800px;
-	min-height: 256px;
-	background-image: url("../img/feature-picture-2.jpg");
-	background-repeat: no-repeat;
-	background-position: 0 -76px;
+	object-fit: cover;
 	order: -1;
 } 
 
@@ -349,10 +343,6 @@ a {
 
 .hotel-search {
 	position: relative;
-}
-
-.hotel-search .search-intro {
-	width: 1200px;
 	min-height: 291px;
 	display: flex;
 	flex-direction: column;
@@ -387,8 +377,7 @@ a {
 	font-size: 21px;
 	font-weight: bold;
 	color: #ffffff;
-	text-align: center;
-	line-height: 86px;
+	line-height: 26px;
 	text-transform: uppercase;
 	cursor: pointer;
 }
@@ -406,6 +395,9 @@ a {
 /* Форма */
 
 .hotel-form {
+	position: absolute;
+	top: 100%;
+	left: calc(50% - 568px / 2);
 	display: flex;
 	flex-direction: column;
 	width: 568px;
@@ -413,10 +405,6 @@ a {
 	background-color: white;
 	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15); 
 	font-weight: bold;
-	margin-left: auto;
-	margin-right: auto;
-	position: absolute;
-	left: 316px;
 }
 
 .hotel-form input {
