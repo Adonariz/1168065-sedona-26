@@ -47,12 +47,14 @@ a {
 
 .main-nav {
 	display: flex;
+	flex-wrap: wrap;
 	min-height: 56px;
 	position: relative;
 }
 
 .main-menu-list {
 	display: flex;
+	flex-wrap: wrap;
 	min-height: inherit;
 	margin: 0;
 	padding: 0;
@@ -72,13 +74,11 @@ a {
 	min-width: 300px;
 }
 
-.main-menu-item:nth-child(1),
-.main-menu-item:nth-child(2) {
+.main-menu-item.left {
 	text-align: left;
 }
 
-.main-menu-item:nth-child(3),
-.main-menu-item:nth-child(4) {
+.main-menu-item.right {
 	text-align: right;
 }
 
@@ -117,6 +117,7 @@ a {
 
 .intro {
 	min-height: 508px;
+	background-color: #e2f0f8;
 	background-image: 
 	url("../img/intro-mask.svg"),
 	url("../img/background-photo.jpg");
@@ -572,6 +573,7 @@ a {
 
 .page-footer {
 	display: flex;
+	flex-wrap: wrap;
 	position: relative;
 	line-height: 26px;
 }
@@ -595,6 +597,7 @@ a {
 	width: 400px;
 	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	align-items: center;
@@ -656,11 +659,11 @@ a {
 
 /* Секция с фильтром */
 .hotel-filter {
-	width: 1200px;
 	min-height: 217px;
 	background-color: gray;
 	color: white;
 	line-height: 21px;
+	background-color: #7498b8;
 	background-image: url("../img/filter-background.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 -294px;
@@ -717,7 +720,6 @@ a {
 }
 
 .checkbox-list-item label {
-	display: block;
 	font-size: 14px;
 	line-height: 21px;
 	cursor: pointer;
@@ -748,11 +750,7 @@ a {
 }
 
 .checkbox-input:focus + label::before {
-	box-shadow: 0px 0px 3px 2px rgba(0,0,0, 0.50);
-}
-
-.checkbox-input:checked:focus + label:before {
-	box-shadow: none;
+	box-shadow: 0px 0px 5px 3px rgba(0,0,0, 0.50);
 }
 
 /* Слайдер */
@@ -795,6 +793,7 @@ a {
 
 .price-input label {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 14px;
 	line-height: 21px;
 	margin-top: 6px;
