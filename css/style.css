@@ -337,6 +337,7 @@ a {
 
 .hotel-search {
 	position: relative;
+	z-index: 10;
 	min-height: 291px;
 	display: flex;
 	flex-direction: column;
@@ -367,6 +368,7 @@ a {
 	width: 568px;
 	min-height: 86px;
 	margin-top: 32px;
+	z-index: 5;
 	background-color: #766357;
 	font-size: 21px;
 	font-weight: bold;
@@ -400,6 +402,23 @@ a {
 	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15); 
 	font-weight: bold;
 	line-height: 26px;
+}
+
+.hotel-form.hidden {
+	display: none;
+}
+
+.hotel-form.show {
+	animation-name: form-slide;
+	animation-duration: 1s;
+}
+@keyframes form-slide {
+	0% {
+		top: -30%;
+	}
+	100% {
+		top: 100%;
+	}
 }
 
 .hotel-form .form-input {
@@ -565,8 +584,15 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+/* Карта */
+
 .map {
 	display: flex;
+	position: relative;
+}
+
+.map iframe {
+	position: absolute;
 }
 
 /* Подвал */
@@ -574,11 +600,12 @@ a {
 .page-footer {
 	display: flex;
 	flex-wrap: wrap;
-	position: relative;
 	line-height: 26px;
 }
 
 .page-footer.index {
+	position: relative;
+	z-index: 10;
 	background-color:rgba(255, 255, 255, 0.9);
 	margin-top: -120px;
 }
