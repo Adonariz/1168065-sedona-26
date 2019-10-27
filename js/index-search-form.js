@@ -19,15 +19,19 @@ searchFormToggle.addEventListener('click', function (evt) {
 
 // проверка данных формы
 form.addEventListener('submit', function (evt) {
+  form.classList.remove('error');
   if (!arrivalDate.value || !departureDate.value) {
     evt.preventDefault();
     console.log('Нужно ввести даты приезда и отъезда');
+    form.classList.remove('error');
+    form.offsetWidth = form.offsetWidth;
     form.classList.add('error');
-  } else {
-    if (adultsAmount.value == 0 && childrenAmount.value == 0) {
-      evt.preventDefault();
-      console.log('Нужно ввести количество людей');
-      form.classList.add('error');
-    }
+  }
+  if (adultsAmount.value == 0 && childrenAmount.value == 0) {
+    evt.preventDefault();
+    console.log('Нужно ввести количество людей');
+    form.classList.remove('error');
+    form.offsetWidth = form.offsetWidth;
+    form.classList.add('error');
   }
 });

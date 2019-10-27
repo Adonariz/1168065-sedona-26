@@ -766,9 +766,6 @@ a {
 
 .checkbox-list-item .checkbox-input {
 	position: absolute;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
 	margin-bottom: 30px;
 }
 
@@ -1059,7 +1056,8 @@ a {
 .hotel-main .btn-container {
 	display: flex;
 	min-height: 27px;
-	line-height: 21px;
+  line-height: 21px;
+  font-weight: bold;
 }
 
 .hotel-main .btn-more {
@@ -1138,9 +1136,9 @@ a {
 .hotel-rating .hotel-score {
 	display: flex;
 	width: 110px;
-	min-height: 27px;
-	justify-content: center;
-	align-items: center;
+  height: 27px;
+  align-items: center;
+  justify-content: center;
 	background-color: #f2f2f2;
 	color: #666666;	
 }
