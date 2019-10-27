@@ -6,7 +6,7 @@ body {
 	color: #000000;
 	background-color: #f2f2f2;
 	
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	
 	box-sizing: border-box; 
@@ -344,7 +344,6 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
 }
 
 .hotel-form-text-block {
@@ -353,7 +352,8 @@ a {
 	align-items: center;
 	z-index: 1;
 	width: 100%;
-	background-color: #ffffff;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .hotel-search-b {
@@ -376,9 +376,9 @@ a {
 }
 
 .hotel-search .htl-search-btn {
-	width: 568px;
-	min-height: 86px;
-	margin-top: 32px;
+  width: 568px;
+  margin-top: 32px;
+  padding: 30px 0;
 	background-color: #766357;
 	font-size: 21px;
 	font-weight: bold;
@@ -422,6 +422,32 @@ a {
 .hotel-form.hidden {
 	transform: translateY(-100%);
 	visibility: hidden;
+}
+
+.hotel-form.error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .hotel-form .form-input {
@@ -664,16 +690,13 @@ a {
 	width: 400px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-}
-
-.copyright .copyright-logo,
-.copyright span {
- display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 .copyright .copyright-logo {
-	margin-left: 8px;
+  margin-top: 6px;
+  margin-left: 11px;
 }
 
 .copyright-logo:hover path,
@@ -915,8 +938,9 @@ a {
 }
 
 .search-results b {
-	font-size: 21px;
-	margin-top: 31px;
+  font-size: 21px;
+  line-height: 26px;
+	margin-top: 30px;
 	margin-right: 48px;
 	margin-left: 71px;
 }
@@ -1021,10 +1045,11 @@ a {
 }
 
 .hotel-list-item p {
-	margin-top: 5px;
-	margin-bottom: 13px;
+	margin-top: 7px;
+	margin-bottom: 14px;
 	display: flex;
-	width: 181px;
+  width: 181px;
+  line-height: 21px;
 }
 
 .hotel-list-item .price {
@@ -1087,7 +1112,8 @@ a {
 }
 
 .hotel-list-item .hotel-rating {
-	width: 110px;
+  width: 110px;
+  line-height: 21px;
 	margin-right: 73px;
 	margin-left: auto;
 }
@@ -1098,7 +1124,7 @@ a {
 	font-size: 0;
 	flex-direction: row-reverse;
 	margin-top: 29px;
-	margin-bottom: 40px;
+	margin-bottom: 43px;
 }
 
 .hotel-stars img {

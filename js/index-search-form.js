@@ -13,6 +13,7 @@ console.log('Спрятали форму');
 searchFormToggle.addEventListener('click', function (evt) {
   evt.preventDefault();
   form.classList.toggle('hidden');
+  form.classList.remove('error');
   console.log('Меняем отображение формы');
 });
 
@@ -21,10 +22,12 @@ form.addEventListener('submit', function (evt) {
   if (!arrivalDate.value || !departureDate.value) {
     evt.preventDefault();
     console.log('Нужно ввести даты приезда и отъезда');
+    form.classList.add('error');
   } else {
     if (adultsAmount.value == 0 && childrenAmount.value == 0) {
       evt.preventDefault();
       console.log('Нужно ввести количество людей');
+      form.classList.add('error');
     }
   }
 });
